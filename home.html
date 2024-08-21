@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Favorite food Survey</h1>
+        <p id="description">Collects user data from input form for the users favorite food.</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Information (required)</legend>
+                <label id="name-label" for="name">Name<input id="name" type="text" placeholder="John Doe" required /></label>
+                <label id="email-label" for="email">Email<input id="email" type="email" placeholder="johndoe@abc.com" required /></label>
+                <label id="number-label" for="number">Phone Number<input id="number" type="number" min="0000000001" max="9999999999" minlength="10" maxlength="10" placeholder="111-111-1111" /></label>
+            </fieldset>
+            <fieldset>
+                <legend>When do you eat breakfast?</legend>
+                <label id="morning-choices" for="early-morning">Early Morning<input type="radio" id="early-morning" name="time-of-morning" value="Early Morning" /></label>
+                <label id="morning-choices" for="mid-morning">Mid Morning<input type="radio" id="mid-morning" name="time-of-morning" value="Mid Morning" /></label>
+                <label id="morning-choices" for="late-morning">Late Morning<input type="radio" id="late-morning" name="time-of-morning" value="Late Morning" /></label>
+
+                <div class="check-wrapper">
+                    <input type="checkbox" id="different-time" name="change-schedule" value="I eat out" /><label id="change-choices" for="different-time">I eat out</label>
+                </div>
+                <div class="check-wrapper">
+                    <input type="checkbox" id="same-time" name="change-schedule" value="I hate cooking" /><label id="change-choices" for="same-time">I hate cooking</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Referral Information</legend>
+                <label id="dropdown-label" for="dropdown">How did You hear about us?
+                    <select id="dropdown" required>
+                        <option value="Social Media">Social Media</option>
+                        <option value="College Campus">College Campus</option>
+                        <option value="Friend Referral">Friend Referral</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+
+                <textarea placeholder="Additional Comments"></textarea>
+                <button id="submit">Submit</button>
+
+            </fieldset>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+label, button, #name, #email, #number {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  #submit, textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  #change-choices {
+    display: inline;
+    width:100%;
+  }
+  
+  .check-wrapper {
+    display: block;
+    padding: 10px 0 0 0;
+  }
